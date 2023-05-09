@@ -24,3 +24,8 @@ def home(request):
 
 def get_json(request):
     return JsonResponse(data={"name": "Dina"}, safe=False)
+
+def login(request):
+    return render(
+        request, 'login.html'
+    )
