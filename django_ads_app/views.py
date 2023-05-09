@@ -11,8 +11,16 @@ def home(request):
         {'id': 3, 'title': "Детское", 'url': "det", 'image': "imd.jpeg"},
         {'id': 4, 'title': "Сувениры", 'url': "suv", 'image': "imd.jpeg"},
     ]
+
+    vip_ads= [
+        {'id': 1, 'seller': "Admin", 'title': "Книга", 'price': 1500.0, 'category': "electro", 'image': "imd.jpeg"},
+        {'id': 2, 'seller': "User1", 'title': "Ноутбук", 'price': 1500.0, 'category': "electro", 'image': "imd.jpeg"},
+        {'id': 3, 'seller': "User2", 'title': "Вентлятор", 'price': 1500.0, 'category': "electro", 'image': "imd.jpeg"},
+        {'id': 4, 'seller': "User3", 'title': "Картина", 'price': 1500.0, 'category': "electro", 'image': "imd.jpeg"},
+    ]
+
     return render(request, 'home.html',
-                  context={'data': "Python", 'categories': categories})
+                  context={'categories': categories, 'vip_ads': vip_ads})
 
 def get_json(request):
     return JsonResponse(data={"name": "Dina"}, safe=False)
