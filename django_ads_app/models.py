@@ -7,3 +7,10 @@ class Ad:
     seller: str
     title: str
     price: float
+
+class Category:
+    id: int
+    title: str
+    image: object
+    url: str
+
