@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-a)22-nw*%^naprx9nx$o22l_$v7xq53f=2l6fad4v!0kw5y_+-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['dinywka.pythonanywhere.com']
 
 
 # Application definition
@@ -103,7 +103,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru'
 
 TIME_ZONE = 'UTC'
 
@@ -116,6 +116,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_ROOT = '/home/dinywka/django_settings/media'
+MEDIA_URL = '/media/'
+STATIC_ROOT = '/home/dinywka/django_settings/static'
+STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     Path(BASE_DIR / 'static'),
 ]
@@ -124,3 +128,5 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
